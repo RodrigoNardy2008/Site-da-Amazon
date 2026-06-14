@@ -1,0 +1,137 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #eaeded;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	height: 60px;
+	background: #131921;
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	padding: 0 20px;
+	color: white;
+}
+
+.logo {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.search_bar {
+	flex: 1;
+	position: relative;
+	height: 40px;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.search_box {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	padding-left: 12px;
+}
+
+.search_button {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 50px;
+	height: 100%;
+
+	border: none;
+	background: #febd69;
+	cursor: pointer;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+}
+
+.account,
+.cart {
+	font-size: 14px;
+}
+
+/* MENU */
+
+.menu {
+	height: 40px;
+	background: #232f3e;
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	padding-left: 20px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/* BANNER */
+
+.banner {
+	height: 450px;
+	background-image: url(https://m.media-amazon.com/images/I/61dTWRxVZ9L._SX3000_.jpg);
+	background-size: cover;
+	background-position: top center;
+  background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+.banner-content {
+	margin-left: 100px;
+	color: white;
+}
+
+.banner-content h1 {
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+
+.banner-content p {
+	font-size: 30px;
+}
+
+.products {
+	margin-top: -180px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+	background: white;
+	padding: 20px;
+}
+
+.card h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+.card img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+}
